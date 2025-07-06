@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHax - Премиум читы для игр</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #111827 100%);
+        }
+        .cheat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="gradient-bg sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-gamepad text-blue-400 text-2xl"></i>
+                <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">GameHax</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#cheats" class="hover:text-blue-400 transition">Читы</a>
+                <a href="#features" class="hover:text-blue-400 transition">Преимущества</a>
+                <a href="#reviews" class="hover:text-blue-400 transition">Отзывы</a>
+                <a href="#faq" class="hover:text-blue-400 transition">FAQ</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition flex items-center">
+                    <i class="fas fa-sign-in-alt mr-2"></i> Войти
+                </button>
+                <button class="md:hidden text-xl" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-gray-800 w-full py-4 px-4" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#cheats" class="hover:text-blue-400 transition">Читы</a>
+                <a href="#features" class="hover:text-blue-400 transition">Преимущества</a>
+                <a href="#reviews" class="hover:text-blue-400 transition">Отзывы</a>
+                <a href="#faq" class="hover:text-blue-400 transition">FAQ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Доминируй в играх с <span class="text-blue-400">премиум</span> читами</h1>
+                <p class="text-xl text-gray-300 mb-8">Лучшие игровые читы с защитой от античитов. Обновления ежедневно, круглосуточная поддержка и 100% гарантия бана!</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md text-lg font-medium transition flex items-center justify-center">
+                        <i class="fas fa-shopping-cart mr-2"></i> Купить сейчас
+                    </button>
+                    <button class="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-md text-lg font-medium transition flex items-center justify-center">
+                        <i class="fas fa-play-circle mr-2"></i> Демо видео
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/500x300" alt="Game Cheats" class="rounded-lg shadow-2xl border-2 border-blue-400">
+                    <div class="absolute -bottom-5 -right-5 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold">
+                        <i class="fas fa-bolt mr-1"></i> UNDETECTED
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">10K+</div>
+                    <div class="text-gray-300">Довольных клиентов</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">50+</div>
+                    <div class="text-gray-300">Игровых читов</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">24/7</div>
+                    <div class="text-gray-300">Поддержка</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">99%</div>
+                    <div class="text-gray-300">Успешных инжектов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cheats Section -->
+    <section id="cheats" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Наши <span class="text-blue-400">читы</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Выберите читы для вашей любимой игры из нашего каталога</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cheat Card 1 -->
+                <div class="cheat-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/400x200" alt="CS2 Cheat" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">HOT</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold">CS2 Elite Hack</h3>
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">v4.2.1</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Полный набор функций для доминирования в CS2: Aimbot, Wallhack, Triggerbot и многое другое.</p>
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Undetected</span>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Авто-обновления</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Поддержка 24/7</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold">$15</span>
+                                <span class="text-gray-400 line-through ml-2">$25</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cheat Card 2 -->
+                <div class="cheat-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/400x200" alt="Valorant Cheat" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold">NEW</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold">Valorant Supreme</h3>
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">v3.5.0</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Мощный чит для Valorant с интеллектуальным Aimbot и минимальной заметностью.</p>
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Undetected</span>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Stream Proof</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Поддержка 24/7</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold">$20</span>
+                                <span class="text-gray-400 line-through ml-2">$30</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cheat Card 3 -->
+                <div class="cheat-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/400x200" alt="Fortnite Cheat" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-yellow-600 text-white px-3 py-1 rounded-full text-xs font-bold">SALE</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold">Fortnite Phantom</h3>
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">v5.1.3</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">Лучший чит для Fortnite с Aimbot, ESP и множеством других функций для победы.</p>
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Undetected</span>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Авто-обновления</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Поддержка 24/7</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold">$12</span>
+                                <span class="text-gray-400 line-through ml-2">$20</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-md text-lg font-medium transition">
+                    <i class="fas fa-arrow-right mr-2"></i> Показать все читы
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Почему выбирают <span class="text-blue-400">нас</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Мы предлагаем лучшие игровые читы с уникальными функциями</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Защита от античитов</h3>
+                    <p class="text-gray-400">Наши читы используют передовые технологии обхода античитов, обеспечивая вашу безопасность.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Автоматические обновления</h3>
+                    <p class="text-gray-400">Читы автоматически обновляются при выходе новых версий игры или античитов.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Круглосуточная поддержка</h3>
+                    <p class="text-gray-400">Наша команда поддержки доступна 24/7 для решения любых ваших вопросов.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Высокая производительность</h3>
+                    <p class="text-gray-400">Оптимизированные читы не нагружают систему и работают без лагов.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Скрытность</h3>
+                    <p class="text-gray-400">Наши читы незаметны для стримеров и систем записи игрового процесса.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Гарантия возврата</h3>
+                    <p class="text-gray-400">Если вас забанят в течение 14 дней - мы вернем вам деньги.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Отзывы <span class="text-blue-400">клиентов</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Что говорят о нас наши пользователи</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-xl font-bold mr-4">JD</div>
+                        <div>
+                            <h4 class="font-bold">John Doe</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">"Использую читы для CS2 уже 3 месяца - ни одного бана. Поддержка действительно помогает, когда возникают вопросы. Рекомендую!"</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-xl font-bold mr-4">AS</div>
+                        <div>
+                            <h4 class="font-bold">Alex Smith</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">"Купил Fortnite чит и не пожалел. Aimbot работает идеально, FPS не падает. Обновления выходят быстро после патчей игры."</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-xl font-bold mr-4">MJ</div>
+                        <div>
+                            <h4 class="font-bold">Maria Johnson</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">"Лучший чит для Valorant, который я пробовала. Настройки очень гибкие, можно сделать игру максимально естественной. Спасибо за качественный продукт!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Частые <span class="text-blue-400">вопросы</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Ответы на наиболее популярные вопросы</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gray-900 rounded-lg shadow-lg mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center bg-gray-800 hover:bg-gray-700 transition">
+                        <span class="text-lg font-medium">Как часто обновляются читы?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-6 hidden">
+                        <p class="text-gray-400">Мы выпускаем обновления сразу после выхода новых версий игр или античитов. Обычно это происходит в течение 2-12 часов после обновления игры. Все наши пользователи получают обновления автоматически.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg shadow-lg mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center bg-gray-800 hover:bg-gray-700 transition">
+                        <span class="text-lg font-medium">Какие гарантии вы даете?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-6 hidden">
+                        <p class="text-gray-400">Мы гарантируем, что наши читы не будут обнаружены античитами. Если вас забанят в течение 14 дней после покупки - мы вернем вам деньги. Также мы гарантируем круглосуточную поддержку и регулярные обновления.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg shadow-lg mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center bg-gray-800 hover:bg-gray-700 transition">
+                        <span class="text-lg font-medium">Как происходит оплата?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-6 hidden">
+                        <p class="text-gray-400">Мы принимаем Bitcoin, Ethereum, кредитные карты, PayPal и другие популярные платежные методы. После оплаты вы мгновенно получаете доступ к личному кабинету с загрузкой читов и инструкциями.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg shadow-lg mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center bg-gray-800 hover:bg-gray-700 transition">
+                        <span class="text-lg font-medium">Можно ли использовать читы на стримах?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-6 hidden">
+                        <p class="text-gray-400">Да, наши читы имеют функцию "Stream Proof", которая скрывает визуальные элементы от программ захвата экрана. Однако мы рекомендуем использовать эту функцию осторожно и не злоупотреблять очевидными преимуществами во время стримов.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center bg-gray-800 hover:bg-gray-700 transition">
+                        <span class="text-lg font-medium">Как быстро я получу доступ после оплаты?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-6 hidden">
+                        <p class="text-gray-400">Доступ предоставляется мгновенно после подтверждения платежа. Для криптовалютных платежей это обычно занимает 10-30 минут (время подтверждения транзакции в блокчейне). Вы получите письмо с инструкциями сразу после зачисления платежа.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Готовы начать доминировать?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Присоединяйтесь к тысячам игроков, которые уже используют наши читы для победы</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-md text-lg font-medium transition flex items-center justify-center mx-auto">
+                    <i class="fas fa-shopping-cart mr-2"></i> Выбрать чит
+                </button>
+                <button class="bg-gray-700 hover:bg-gray-600 px-8 py-4 rounded-md text-lg font-medium transition flex items-center justify-center mx-auto">
+                    <i class="fas fa-question-circle mr-2"></i> Задать вопрос
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gamepad text-blue-400 text-2xl"></i>
+                        <span class="text-2xl font-bold">GameHax</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Лучшие игровые читы с 2018 года. Безопасность и анонимность наших клиентов - наш приоритет.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-telegram text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-discord text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i class="fab fa-twitter text-2xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Читы</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">CS2</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Valorant</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Fortnite</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Apex Legends</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Call of Duty</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Информация</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">О нас</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Блог</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Гарантии</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Политика конфиденциальности</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Условия использования</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Поддержка</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Контакты</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">База знаний</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Статус сервиса</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Возврат средств</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500">
+                <p>© 2023 GameHax. Все права защищены. Все названия игр, логотипы и торговые марки являются собственностью соответствующих владельцев.</p>
+                <p class="mt-2 text-sm">Использование читов может нарушать правила игр и привести к блокировке аккаунта. Используйте на свой страх и риск.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                icon.classList.toggle('rotate-180');
+                
+                // Close other open answers
+                document.querySelectorAll('.faq-question').forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.nextElementSibling.classList.add('hidden');
+                        otherButton.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
